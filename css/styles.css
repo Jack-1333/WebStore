@@ -1,0 +1,88 @@
+:root {
+    --primary: #9c2780;
+    --darkprimary: #891190;
+    --secondary: #FFCE00;
+    --darksecondary: rgb(233 287 2);
+    --white: #FFF;
+    --black: #000;
+    --primaryfont:'Staatliches', cursive;
+}
+
+html {
+    font-size: 62.5%;/*Se utiliza para resetear los pixeles y utilizae rem.*/
+    box-sizing: border-box;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--primary);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white)
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    font-family: var(--primaryfont);
+    text-align: center;
+    color: var(--secondary);
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+/*Header*/
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 3rem 0;
+}
+.footer {
+    background-color: var(--darkprimary);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__text {
+    text-align: center;
+    font-family: var(--primaryfont);
+    font-size: 2.2rem;
+}
+
+/*Navigation*/
+.navigation {
+    background-color: var(--darkprimary);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.navigation__link {
+    font-family: var(--primaryfont);
+    color: var(--white);
+    font-size: 3rem;
+}
