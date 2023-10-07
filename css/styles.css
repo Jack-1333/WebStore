@@ -141,5 +141,6 @@ h3 {
 @media (min-width: 768px) {
     .mode--graph {
         grid-row: 5 / 6; /* ubica la imagen en el espacio 2 y 3 de l grid de las filas */
+        grid-column: 2 / 4;
     }
 }
