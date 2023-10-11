@@ -178,3 +178,25 @@ h3 {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/*Estilos a la pagina productos*/
+@media (min-width: 768px) {
+    .t-shirt {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2rem;
+
+}
+.form__field {
+
+}
+.form__submit {
+
+}
