@@ -1,8 +1,8 @@
 :root {
-    --primary: #9c2780;
-    --darkprimary: #891190;
+    --primary: #9C2780;
+    --darkprimary: #89119D;
     --secondary: #FFCE00;
-    --darksecondary: rgb(233 287 2);
+    --darksecondary: rgb(233, 287, 2);
     --white: #FFF;
     --black: #000;
     --primaryfont:'Staatliches', cursive;
@@ -195,8 +195,33 @@ h3 {
 
 }
 .form__field {
-
+    /* border-color: var(--darkprimary);
+    border-width: 1rem;
+    border-style: solid; */
+    border: 1rem solid var(--darkprimary);
+    background-color: transparent;
+    color: var(--white);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    appearance: none;/*Para remover estilos que le da la web algunos elementos*/
+}
+.form__field::placeholder {
+    color: var(--white);
+    opacity: 1; /*Firefox*/
+}
+.form__field option {
+    background-color: var(--primary);
 }
 .form__submit {
-
+    background-color: var(--secondary);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--primaryfont);
+    padding: 2rem;
+    grid-column: 1 / 3;
+}
+.form__submit:hover {
+    cursor: pointer;
+    background-color: var(--darksecondary);
 }
