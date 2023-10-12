@@ -115,6 +115,11 @@ h3 {
     font-size: 2.8rem;
     color: var(--secondary);
 }
+.product:hover {
+    border: .5rem solid rgb(140, 249, 56);
+    background-color: #0072CE;
+    transform: scale(1.2);
+}
 
 .product__name,
 .product__price {
@@ -220,8 +225,32 @@ h3 {
     font-family: var(--primaryfont);
     padding: 2rem;
     grid-column: 1 / 3;
+    transition: background-color 0.3 ease;
+    animation: moveandlargeBotton 3s infinite;
 }
 .form__submit:hover {
     cursor: pointer;
-    background-color: var(--darksecondary);
+    background-color: #0072CE;
+    border: .5rem solid var(--white);
+    color: var(--white);
+    font-size: 3rem;
+    animation: none;
+}
+
+@keyframes moveandlargeBotton {
+    0% {
+        transform: scale(1);
+        border: .5rem solid var(--darksecondary);
+    }
+    50% {
+        transform: scale(1.06);
+        background-color: var(--darksecondary);
+        border: .5rem solid var(--secondary);
+        font-size: 2.1rem;
+    }
+    100% {
+        transform: scale(1);
+        border: .5rem solid var(--darksecondary);
+    }
+
 }
